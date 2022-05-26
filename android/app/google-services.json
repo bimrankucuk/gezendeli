@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "209739223715",
+    "project_id": "gezendeli-c4a8e",
+    "storage_bucket": "gezendeli-c4a8e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:209739223715:android:aa2e3206cd075706892516",
+        "android_client_info": {
+          "package_name": "com.example.gezendeli"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "209739223715-tha3t8jmf3kf7tn7d6cbhsfc0qmkg1q5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxh1buZ7doLJh1aigqn-OuYPieiATvZF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "209739223715-tha3t8jmf3kf7tn7d6cbhsfc0qmkg1q5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
