@@ -39,6 +39,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  bool progressBarGorunum= false ;
   final TextEditingController _emailController=TextEditingController();
   final TextEditingController _passwordController=TextEditingController();
   AuthServices _authServices=AuthServices();
@@ -121,9 +122,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       textColor: Colors.white,
                       child: Text("GİRİŞ YAP"),
                       onPressed: (){
-                        //_authServices.singIn(_emailController.text, _passwordController.text).then((value){Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Anasayfa()));});
-                        _authServices.singIn(_emailController.text, _passwordController.text).then((value){Navigator.push(context, MaterialPageRoute(builder: (context)=>Anasayfa()));});
-                      },
+                        _authServices.singIn(_emailController.text, _passwordController.text).then((value){Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Anasayfa()));});
+                        },
                     ),
                   ),
                   SizedBox(width: 25,),
@@ -134,7 +134,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         textColor: Colors.white,
                         child: Text("Kaydol"),
                         onPressed: (){
-                          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Kaydol()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>Kaydol()));
                         }
                     ),
                   ),

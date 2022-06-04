@@ -26,7 +26,7 @@ class _AnasayfaState extends State<Anasayfa> {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Padding(
-                padding:  EdgeInsets.all(ekranGenislik/5),
+                padding:  EdgeInsets.all(ekranGenislik/6),
                 child: Image.asset("resimler/logo.jpg"),
               ), //logo
               Row(
@@ -36,7 +36,11 @@ class _AnasayfaState extends State<Anasayfa> {
                     padding: const EdgeInsets.only(left: 8),
                     child: Text("Kategoriler:",style: TextStyle(fontWeight: FontWeight.w600),),
                   ),
-                  
+                  Spacer(),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 20),
+                    child: Icon(FontAwesomeIcons.arrowRight),
+                  ),
                 ],
               ),
               Container(
@@ -131,14 +135,12 @@ class _AnasayfaState extends State<Anasayfa> {
                         });
                       },
                     ),
-
-
                   ],
 
                 ),
               ),
-             SizedBox(height: 50,),
-             Row(
+              SizedBox(height: 50,),
+              Row(
                mainAxisAlignment: MainAxisAlignment.center,
                children: [
                  GestureDetector(
