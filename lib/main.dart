@@ -132,7 +132,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: RaisedButton(
                         color: Colors.black,
                         textColor: Colors.white,
-                        child: Text("Kaydol"),
+                        child: Text("Kayıt ol"),
                         onPressed: (){
                           Navigator.push(context, MaterialPageRoute(builder: (context)=>Kaydol()));
                         }
